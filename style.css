@@ -1,14 +1,116 @@
-.gameboard{
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+
+body{
+    font-family: "Walter Turncoat", sans-serif; 
+    background-color: gray;
+    color: white;
+    align-items: center;
+
+}
+
+.chalkboard {
+    background-image: url(./blackboard.jpg);
+    background-size: 150%;
     display: grid;
-    grid-template-columns: 50px 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-    text-align: center;
+    border: solid 10px burlywood;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    align-content: center;
+    justify-items: center;
+    margin: 30px;
+}
+
+.hide > div {
+    display: none;
+}
+#startGame{
+    background: transparent;
+    color: white;
+    font-family: "Walter Turncoat", sans-serif; 
+    font-size: large;
+}
+
+#gameboard{
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 80px 80px 80px;
+    background: transparent;
+    color: white;
+    font-family: "Walter Turncoat", sans-serif; 
+    font-size: xx-large;
+    align-items: center;
     justify-content: center;
 }
 
-
 .box{
-    border: 2px solid black;
-    height: 50px;
-    justify-items: center
+    display: grid;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#box0, #box1, #box3, #box4 {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#box2, #box5{
+    border-bottom: 2px solid white;;
+}
+
+#box6, #box7{
+    border-right: 2px solid white;;
+}
+
+.players {
+    display: grid;;
+    grid-template-rows: 40px 40px;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 20px;
+}
+
+.markerSelector{
+    width: 40px;
+    background: transparent;
+    color: white;
+    font-family: "Walter Turncoat", sans-serif; 
+    font-size: xx-large;
+}
+
+.markerSelector:hover, .playerInput:hover, #startGame:hover{
+    border: 2px solid white;
+}
+
+.playerInput{
+    background: transparent;
+    color: white;
+    font-family: "Walter Turncoat", sans-serif; 
+    font-size: large;
+
+}
+
+.empty {
+    display: none;
+}
+
+.win {
+    display: grid;
+    height: 80px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-weight: 900;
+    font-size: 60px;
+    color:white;
+    text-shadow: 2px 2px gray ;
 }
