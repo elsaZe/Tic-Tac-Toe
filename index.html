@@ -8,37 +8,40 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Tic Tac Toe</h1>
-    </div>
-    <div class="players">
-        <div class ="player1">
-            <label>Player 1 Name</label>
-            <input id="playerOneName" class="playerInput" value="Player 1">
-            <p>Choose Your Marker</p>
-            <button id="playerOneMarker" class="markerSelector" class="default" value="X">X</button>
+    <div class="chalkboard">
+        <div class="header">
+            <h1>Tic Tac Toe</h1>
         </div>
-        <div class ="player2">
-            <label>Player 1 Name</label>
-            <input id="playerTowName" class="playerInput" value="Player 2">
-            <p>Choose Your Marker</p>
-            <button id="playerTwoMarker" class="markerSelector" class="default" value="O">O</button>
-        </div>
+        <div class="players">
+            <div class ="player">
+                <button id="playerOneMarker" class="markerSelector" class="default" value="X">X</button>
+                <label>Player 1 Name:</label>
+                <input id="playerOneName" class="playerInput" value="Player 1">
+            </div>
+            <div class ="player">
+                <button id="playerTwoMarker" class="markerSelector" class="default" value="O">O</button>
+                <label>Player  Name:</label>
+                <input id="playerTwoName" class="playerInput" value="Player 2">
+            </div>
 
-    </div>
-    <div class = "start">
-        <button id="startGame">Start Game</button>
-    </div>
-    <div class="gameboard" id="gameboard">
-        <div id="box0" class="box"></div>
-        <div id="box1" class="box"></div>
-        <div id="box2" class="box"></div>
-        <div id="box3" class="box"></div>
-        <div id="box4" class="box"></div>
-        <div id="box5" class="box"></div>
-        <div id="box6" class="box"></div>
-        <div id="box7" class="box"></div>
-        <div id="box8" class="box"></div>
+        </div>
+        <div class = "start">
+            <button id="startGame">Start Game</button>
+        </div>
+        <h3 id="progress" class ="full"></h3>
+        <h2 id="result"></h2>
+        <div class="hide" id="gameboard">
+            <div id="box0" class="box"></div>
+            <div id="box1" class="box"></div>
+            <div id="box2" class="box"></div>
+            <div id="box3" class="box"></div>
+            <div id="box4" class="box"></div>
+            <div id="box5" class="box"></div>
+            <div id="box6" class="box"></div>
+            <div id="box7" class="box"></div>
+            <div id="box8" class="box"></div>
+        </div>
+        <p class="credit">Background photo by Tim Mossholder on Unsplash</p>
     </div>
     <script src="./script.js"></script>  
 </body>
